@@ -1,0 +1,388 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-color: rgb(5, 5, 81);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 48px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(226, 43, 43);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: azure;
+    font-size: 36px;
+    text-align: center;
+}
+h2.titulo span{
+    color: red;
+}
+
+/* estilo do cabeçalho */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(127, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+
+}
+
+header a h1{
+    font-size: 40px;
+        
+}
+
+header a:hover{
+    color:rgb(255, 0, 0);
+    transform: scale(1.05);
+    
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.797);
+    transform: scale(1.05);
+}
+
+/* TOPO DO SITEEE */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo-site  h1{
+    color:azure;
+    font-size: 42px;
+    line-height: 40px;
+
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: red;    
+}
+
+.topo-do-site .txt-topo-site p{
+    color: azure;
+    margin: 40px ;
+}
+
+.topo-do-site .img-topo-site img{
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.789);
+    position: relative;
+    border-radius: 25px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* OLHA AS ESPECIALIDADES KKKK */
+
+section.Especialidades{
+    padding: 100px 4%;
+}
+
+section.Especialidades .flex{
+    gap: 60px;
+}
+
+.Especialidades .especialidades-box{
+    color: azure;
+    padding: 40px;
+    transition: .2s;    
+    margin-top: 30px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Especialidades .especialidades-box:hover{
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.518);
+    transform: scale(1.05);
+}
+
+.Especialidades .especialidades-box i{
+    font-size: 72px;
+    color: red;
+}
+
+.Especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* SOBRE MIM ESTILOS */
+
+section.Sobre{
+    padding: 100px 4%;
+}
+
+section.Sobre .flex{
+    align-items: center;
+        gap: 60px;
+}
+
+.Sobre .img-sobre img{
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.789);    
+    border-radius: 25px;
+}
+
+.Sobre .txt-sobre h2{
+    color: azure;
+    font-size: 40px;
+    line-height: 36px;
+}
+
+.Sobre .txt-sobre h2 span{
+    color: red;
+    display: block;
+}
+
+.Sobre .txt-sobre p{
+    color: azure;
+    margin: 20px;
+    text-align: justify;
+}
+
+.btn-sobre button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 0;
+    background-color: red;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.btn-sobre button:hover{
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.797);
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/* PORTFOLIO TRABLAAHOS */
+
+section.Trabalhos{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 0, 0, 0.415)
+}
+
+section.Trabalhos .flex {
+    justify-content: space-around;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0% ;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+/* RESTO DOS TRAB */
+
+section.Portfolio2{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 0, 0, 0.415)
+}
+
+section.Portfolio2 .flex {
+    justify-content: space-around;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0% ;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+    box-shadow: 0 0 40px 10px red;
+}
+
+/* estilo slide */
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;    
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slides img{
+    width: 800px;
+}
+
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 5ms;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+
+.manual-btn:hover{
+    background-color: red;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+/* rodape rodape */
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 0, 0, 0.418);
+}
+
+footer .logofooter{
+    color: rgba(255, 0, 0, 0.57);
+    transition: 2s;
+}
+
+footer .logofooter:hover{
+    color:rgb(255, 0, 0);
+    transform: scale(1.05);
+
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .linefooter{
+    padding: 20px 0;
+    
+}
+
+.borda{
+    border-top: 2px solid red;
+}
+
+footer .linefooter p{
+    color: red;
+    font-size: 22px;
+    
+}
+
+footer .linefooter p a{
+    color: rgb(255, 255, 255);    
+}
+
+
+
